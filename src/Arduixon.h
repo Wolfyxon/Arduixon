@@ -7,6 +7,14 @@
 
 typedef ulong_t unsigned long;
 
+/* Custom defines */
+
+#ifdef CONFIG_IDF_TARGET_ESP32
+    #define ESP_BIG
+#elif CONFIG_IDF_TARGET_ESP32S2
+    #define ESP_SMALL
+#endif
+
 /* Polyfills */
 
 #ifndef LED_BUILTIN
