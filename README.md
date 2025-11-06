@@ -11,7 +11,7 @@ Please note that this is specifically made for my hardware so you will likely ne
 - `ESP_BIG` defined when compiling for my *ESP32*
 
 ### Macros & functions
-- `BLINK_WHILE(condition, pin, delayMs)` turns a pin on and off with a delay while a condition is met
+- `blink_while(condition, pin, delayMs)` turns a pin on and off with a delay while a condition is met
 
 ### Types
 `ulong_t`: `unsigned long`

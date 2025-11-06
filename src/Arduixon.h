@@ -17,7 +17,7 @@ typedef unsigned long ulong_t;
 
 /* Macros */
 
-#define BLINK_WHILE(condition, pin, delayMs) \
+#define blink_while(condition, pin, delayMs) \
     if(true) {                               \
         bool state = true;                   \
                                              \
