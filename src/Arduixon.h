@@ -20,6 +20,7 @@ typedef unsigned long ulong_t;
 #define blink_while(condition, pin, delayMs) \
     if(true) {                               \
         bool state = true;                   \
+        ulong_t start = millis();            \
                                              \
        pinMode(pin, OUTPUT);                 \
                                              \       
@@ -27,7 +28,11 @@ typedef unsigned long ulong_t;
             digitalWrite(pin, state);        \
                                              \
             state = !state;                  \
-            delay(delayMs);                  \
+                                             \
+            while(                           \
+                (condition) &&               \
+                millis() < start + delayMs   \
+            );                               \
         }                                    \
                                              \
         digitalWrite(pin, LOW);              \
