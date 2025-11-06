@@ -3,6 +3,12 @@
 
 #include <Arduino.h>
 
+/* Custom types */
+
+typedef ulong_t unsigned long;
+
+/* Polyfills */
+
 #ifndef LED_BUILTIN
     #ifdef CONFIG_IDF_TARGET_ESP32
         #define LED_BUILTIN 2
