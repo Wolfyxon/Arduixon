@@ -15,4 +15,4 @@ Please note that this is specifically made for my hardware so you will likely ne
 - `blink_for_ms(pin, durationMs, blinkDelayMs)` turns a pin on and off for a specified amount of time
 
 ### Types
-`ulong_t`: `unsigned long`
+- `ulong_t`: `unsigned long`
