@@ -15,6 +15,24 @@ typedef unsigned long ulong_t;
     #define ESP_SMALL
 #endif
 
+/* Macros */
+
+#define BLINK_WHILE(condition, pin, delayMs) \
+    if(true) {                               \
+        bool state = true;                   \
+                                             \
+       pinMode(pin, OUTPUT);                 \
+                                             \       
+        while(condition) {                   \
+            digitalWrite(pin, state);        \
+                                             \
+            state = !state;                  \
+            delay(delayMs);                  \
+        }                                    \
+                                             \
+        digitalWrite(pin, LOW);              \
+    }
+
 /* Polyfills */
 
 #ifndef LED_BUILTIN
