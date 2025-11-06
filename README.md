@@ -12,6 +12,7 @@ Please note that this is specifically made for my hardware so you will likely ne
 
 ### Macros & functions
 - `blink_while(condition, pin, delayMs)` turns a pin on and off with a delay while a condition is met
+- `blink_for_ms(pin, durationMs, blinkDelayMs)` turns a pin on and off for a specified amount of time
 
 ### Types
 `ulong_t`: `unsigned long`

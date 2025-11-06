@@ -38,6 +38,10 @@ typedef unsigned long ulong_t;
         digitalWrite(pin, LOW);              \
     }
 
+/* Functions */
+
+void blink_for_ms(uint8_t pin, ulong_t durationMs, ulong_t blinkDelayMs);
+
 /* Polyfills */
 
 #ifndef LED_BUILTIN
