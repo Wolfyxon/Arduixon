@@ -6,7 +6,7 @@ Please note that this is specifically made for my hardware so you will likely ne
 
 ## Features
 ### Definitions
-- `LED_BUILTIN` polyfill for *ESP32* (pin 2) and *ESP32S2* (pin 15)
+- `LED_BUILTIN` polyfill for *ESP32* (pin 2) and *ESP32S2* (pin 15). **You may need to change it!**
 - `ESP_SMALL` defined when compiling for my *ESP32S2*
 - `ESP_BIG` defined when compiling for my *ESP32*
 
