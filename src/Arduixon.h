@@ -5,9 +5,9 @@
 
 /* Custom types */
 
-typedef ulong_t unsigned long;
+typedef unsigned long ulong_t;
 
-/* Custom defines */
+/* Definitions */
 
 #ifdef CONFIG_IDF_TARGET_ESP32
     #define ESP_BIG
