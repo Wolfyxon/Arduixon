@@ -3,10 +3,6 @@
 
 #include <Arduino.h>
 
-/* Custom types */
-
-typedef unsigned long ulong_t;
-
 /* Definitions */
 
 #ifdef CONFIG_IDF_TARGET_ESP32
