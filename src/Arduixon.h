@@ -39,6 +39,8 @@
 void blink_for_ms(uint8_t pin, ulong_t durationMs, ulong_t blinkDelayMs);
 void blink_once(uint8_t pin, ulong_t durationMs);
 
+inline ulong millis_to_micros(ulong millis);
+
 /* Polyfills */
 
 #ifndef LED_BUILTIN

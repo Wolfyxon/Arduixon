@@ -13,3 +13,7 @@ void blink_once(uint8_t pin, ulong_t durationMs) {
     delay(durationMs);
     digitalWrite(pin, LOW);
 }
+
+inline ulong millis_to_micros(ulong millis) {
+    return millis * 1000;    
+}
