@@ -22,7 +22,7 @@
         while(condition) {                   \
             digitalWrite(pin, state);        \
                                              \
-            ulong_t start = millis();        \
+            ulong start = millis();        \
             state = !state;                  \
                                              \
             while(                           \
@@ -36,8 +36,8 @@
 
 /* Functions */
 
-void blink_for_ms(uint8_t pin, ulong_t durationMs, ulong_t blinkDelayMs);
-void blink_once(uint8_t pin, ulong_t durationMs);
+void blink_for_ms(uint8_t pin, ulong durationMs, ulong blinkDelayMs);
+void blink_once(uint8_t pin, ulong durationMs);
 
 inline ulong millis_to_micros(ulong millis);
 
