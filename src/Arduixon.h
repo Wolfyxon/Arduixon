@@ -39,7 +39,7 @@
 void blink_for_ms(uint8_t pin, ulong durationMs, ulong blinkDelayMs);
 void blink_once(uint8_t pin, ulong durationMs);
 
-inline ulong millis_to_micros(ulong millis);
+ulong millis_to_micros(ulong millis);
 
 /* Polyfills */
 
