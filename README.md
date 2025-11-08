@@ -8,7 +8,7 @@ Please note that this is specifically made for my hardware so you will likely ne
 ### Definitions
 - `LED_BUILTIN` polyfill for *ESP32* (pin 2) and *ESP32S2* (pin 15). **You may need to change it!**
 - `ESP_SMALL` defined when compiling for my *ESP32S2*
-- `ESP_BIG` defined when compiling for my *ESP32*
+- `ESP_BIG` defined when compiling for my *ESP32S*
 
 ### Macros & functions
 - `blink_while(condition, pin, delayMs)` turns a pin on and off with a delay while a condition is met
