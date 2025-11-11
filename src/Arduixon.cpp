@@ -1,4 +1,4 @@
-#include <Arduixon.h>;
+#include <Arduixon.h>
 
 void blink_for_ms(uint8_t pin, ulong durationMs, ulong blinkDelayMs) {
     ulong end = millis() + durationMs;
