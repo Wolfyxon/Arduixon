@@ -18,11 +18,11 @@
         bool state = true;                   \
                                              \
        pinMode(pin, OUTPUT);                 \
-                                             \       
+                                             \
         while(condition) {                   \
             digitalWrite(pin, state);        \
                                              \
-            ulong start = millis();        \
+            ulong start = millis();          \
             state = !state;                  \
                                              \
             while(                           \
