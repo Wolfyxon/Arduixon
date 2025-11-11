@@ -13,25 +13,22 @@
 
 /* Macros */
 
-#define blink_while(condition, pin, delayMs) \
-    do {                                     \
-        bool state = true;                   \
-                                             \
-       pinMode(pin, OUTPUT);                 \
-                                             \
-        while(condition) {                   \
-            digitalWrite(pin, state);        \
-                                             \
-            ulong start = millis();          \
-            state = !state;                  \
-                                             \
-            while(                           \
-                (condition) &&               \
-                millis() < start + delayMs   \
-            );                               \
-        }                                    \
-                                             \
-        digitalWrite(pin, LOW);              \
+#define blink_while(condition, pin, delayMs)      \
+    do {                                          \
+       pinMode(pin, OUTPUT);                      \
+                                                  \
+        while(condition) {                        \
+            digitalWrite(pin, !digitalRead(pin)); \
+                                                  \
+            ulong start = millis();               \
+                                                  \
+            while(                                \
+                (condition) &&                    \
+                millis() < start + delayMs        \
+            );                                    \
+        }                                         \
+                                                  \
+        digitalWrite(pin, LOW);                   \
     } while(false)
 
 /* Functions */
