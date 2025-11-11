@@ -14,7 +14,7 @@
 /* Macros */
 
 #define blink_while(condition, pin, delayMs) \
-    if(true) {                               \
+    do {                                     \
         bool state = true;                   \
                                              \
        pinMode(pin, OUTPUT);                 \
@@ -32,7 +32,7 @@
         }                                    \
                                              \
         digitalWrite(pin, LOW);              \
-    }
+    } while(false)
 
 /* Functions */
 
