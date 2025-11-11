@@ -8,9 +8,7 @@ void blink_for_ms(uint8_t pin, ulong durationMs, ulong blinkDelayMs) {
 
 void blink_times(uint8_t pin, size_t blinkNumber, ulong blinkDelayMs) {
     for(size_t i = 0; i < blinkNumber; i++) {
-        digitalWrite(pin, HIGH);
-        delay(blinkDelayMs);
-        digitalWrite(pin, LOW);
+        blink_once(pin, blinkDelayMs);
         delay(blinkDelayMs);
     }
 }
